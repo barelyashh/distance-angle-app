@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THREE.JS WEB APP</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+<div class="cds-cad-viewer-container">
+    <div id="canvas"></div>
+</div>
+   
+   
+    <div id="distancePlace">
+        <div>Distance: </div>
+        <div id="valueDist">0</div>
+    </div>
+    <div id="anglePlace">
+        <div>Angle: </div>
+        <div id="valueAngle">0</div>
+    </div>
+    </div>
+
+    <script type="importmap">
+         {
+             "imports": {
+                 "three": "./node_modules/three/build/three.module.js",
+                 "three/addons/": "./node_modules/three/examples/jsm/"
+             }
+         }
+      </script>
+    <script type="module">
+        import { completeViewer, create } from './js/src/viewer.js';
+        create();
+    </script>
+    <script src="./js/lib/Tween.js"></script>
+    <script type="module" src="./js/src/annotations.js"> </script>
+
+
+</body>
+
+</html>

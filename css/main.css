@@ -1,0 +1,141 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+#canvas {
+    height: 680px;
+    width: 1280px;
+    padding: 0px;
+    position: static;
+}
+
+#info {
+    position: absolute;
+    padding-top: 80px;
+    width: 100%;
+    font-family: sans-serif;
+    padding-left: 290px;
+    box-sizing: border-box;
+    z-index: 1;
+
+}
+
+.description {
+    font-family: monospace;
+    margin-right: 115px;
+
+    font-size: 15px;
+    color: rgb(75, 158, 247);
+}
+
+#distancePlace {
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+#anglePlace {
+    position: absolute;
+    color: black;
+    margin-top: 120px;
+    margin-left: 20px;
+}
+
+#valueAngle {
+    position: absolute;
+    color: black;
+    margin-top: -17px;
+    margin-left: 44px;
+}
+
+#valueDist {
+    position: absolute;
+    color: black;
+    margin-top: -17px;
+    margin-left: 62px;
+
+}
+
+#annotation-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    box-shadow: 0px 0px 5px 1px white;
+  }
+  
+  #annotation-content {
+    position: relative;
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+      0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    max-height: max-content;
+    max-width: max-content;
+    background-color: #fff;
+    padding: 10px;
+    animation-name: annotation;
+    animation-duration: 2s;
+  }
+  
+  #annotation-content input {
+    display: block;
+    margin: 10px;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    background-color: #fff;
+    width: 250px;
+    height: 20px;
+    text-align: center;
+  }
+  
+  #property-palette {
+    width: 16.5%;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px 1px;
+    position: absolute;
+    right: 20px;
+    /* overflow: auto; */
+    /* transform: translate(-500%);     */
+   /*  top: 95%;  */
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+  }
+  
+  #property-palette div {
+   /*  background-color: rgba(0, 0, 0, 0.8); */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    cursor: default;
+    overflow: auto;
+  }
+  
+  #property-palette td {
+    padding: 7px;
+    min-width: 35px;
+  }
+  
+  #property-palette img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  #property-palette li {
+    width: 200px;
+    height: 40px;
+  }
+  
+  #property-palette li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  #property-palette div {
+    padding: 13px;
+  }
